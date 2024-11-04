@@ -1,0 +1,433 @@
+
+@font-face {
+    font-family: 'SemiBold';
+    src: url('fonts/Dosis-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('fonts/Sacramento-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DosisL';
+    src: url('fonts/Dosis-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DosisM';
+    src: url('fonts/Dosis-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-nav .nav-item {
+    margin: 0 5%;
+    font-family: 'SemiBold';
+    font-size: 110%;
+}
+
+.custom-navbar {
+    background-color: #322016;
+    color: white;
+}
+
+.custom-navbar .nav-link {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #f0e68c;
+}
+
+.custom-navbar .nav-link.active {
+    color: #f0e68c;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba(255, 255, 255, 1)" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.image-container {
+    border-end-end-radius: 10%;
+    border-end-start-radius: 10%;
+    overflow: hidden;
+}
+.conoce {
+    border-end-end-radius: 10%;
+    border-end-start-radius: 10%;
+    overflow: hidden;
+    height: 500px;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 115%;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 100%; 
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .text-overlay {
+        top: 45%; 
+        font-size: 18px; 
+    }
+
+    .btn-fondo, .btn-borde {
+        padding: 8px 16px; 
+        font-size: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        top: 40%;
+        font-size: 16px;
+    }
+
+    .btn-fondo, .btn-borde {
+        padding: 6px 12px;
+        font-size: 80%;
+    }
+}
+
+
+.letra {
+    font-family: 'DosisL';
+    font-size: 180%;
+}
+.letra1 {
+    padding: 10%;
+    font-family: 'SemiBold';
+    font-size: 130%;
+}
+.btn-fondo {
+    background-color: #e1613c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'DosisL';
+    font-size: 150%;
+    border-start-start-radius: 25%;
+    border-end-end-radius: 25%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-fondo:hover {
+    background-color: #ea957d;
+}
+
+.btn-borde {
+    background-color: transparent;
+    color: #fed688;
+    border: 2px solid #fed688;
+    padding: 10px 20px;
+    font-family: 'DosisL';
+    font-size: 150%;
+    border-start-start-radius: 25%;
+    border-end-end-radius: 25%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-borde:hover {
+    background-color: #fed688;
+    color: #322016;
+}
+
+
+.btn1-fondo {
+    background-color: #322016;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'DosisL';
+    font-size: 150%;
+    border-start-start-radius: 25%;
+    border-end-end-radius: 25%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn1-fondo:hover {
+    background-color: #efedeb;
+    color: #322016;
+}
+
+.btn1-borde {
+    background-color: transparent;
+    color: #322016;
+    border: 2px solid #322016;
+    padding: 10px 20px;
+    font-family: 'DosisL';
+    font-size: 150%;
+    border-start-start-radius: 25%;
+    border-end-end-radius: 25%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn1-borde:hover {
+    background-color: #efedeb;
+    color: #efedeb;
+}
+.card-custom {
+    position: relative;
+    background-color: #efedeb;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-family: DosisM;
+}
+.card1-custom {
+    position: relative;
+    background-color: #fed688;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-family: DosisM;
+}
+
+/* Corazón blanco de fondo */
+.heart-outline {
+    position: absolute;
+    top: -12px; /* Ajusta según sea necesario */
+    right: -12px; /* Ajusta según sea necesario */
+    width: 46px; /* Tamaño un poco mayor que el corazón original */
+    height: 46px;
+    background-color: white;
+    transform: rotate(-45deg);
+    z-index: 0;
+}
+.heart-outline::before,
+.heart-outline::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    border-radius: 50%;
+}
+.heart-outline::before {
+    top: -23px;
+    left: 0;
+}
+.heart-outline::after {
+    top: 0;
+    bottom: -23px;
+}
+
+/* Corazón principal */
+.heart {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: #fed688;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fed688;
+    border-radius: 50%;
+}
+.heart::before {
+    top: -20px;
+    left: 0;
+}
+.heart::after {
+    top: 0;
+    bottom: -20px;
+}               
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #322016;
+    font-family: SemiBold;
+}
+
+.description {
+    font-size: 14px;
+    color: #322016;
+}
+.serv{
+    font-family: Sacramento;
+    text-align: center;
+    font-size: 600%;
+    margin-top: 10%;
+}
+.subt{
+    font-family: DosisL;
+    text-align: center;
+    font-size: 200%;
+}
+#dosisMM{
+    
+    text-align: start;
+    font-family: DosisM;
+}
+#dosisLL{
+    font-family: DosisL;
+}
+#sacramento1{
+    font-family: Sacramento;
+}
+/* Estilos para el contenedor */
+.container-fluid {
+    padding: 10px 20px;
+}
+
+/* Estilos para los iconos */
+.icono-home {
+    width: 50px; /* Tamaño del icono de casa */
+    margin-right: 5px;
+}
+
+.icono-flecha {
+    width: 30px; /* Tamaño del icono de flecha */
+    margin-right: 10px;
+}
+
+/* Estilos para el texto "CONÓCENOS" */
+.link-conocenos {
+    font-family: 'SemiBold'; /* Usa la fuente que definiste */
+    font-size: 18px;
+    color: #322016;
+    text-decoration: none;
+}
+
+/* Efecto al pasar el mouse */
+.link-conocenos:hover {
+    color: #e1613c; /* Cambia de color al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-footer {
+    background-color: #322016;
+    color: white;
+    font-family: 'DosisL';
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+
+.footer-section h3 {
+    font-family: 'SemiBold';
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul li {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+
+.footer-logo h2 {
+    font-family: 'SemiBold';
+    font-size: 1.5em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-section ul li:hover {
+    color: #f0e68c;
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-media h3 {
+    font-size: 1em;
+    font-family: 'SemiBold';
+}
+
+.social-media i {
+    font-size: 1.5em;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #f0e68c;
+    transition: color 0.3s;
+}
+
+.social-media i:hover {
+    color: #fed688;
+}
+
+.footer-quote {
+    font-family: 'DosisL';
+    font-size: 0.9em;
+    text-align: center;
+    margin: 10px 0;
+    color: #f0e68c;
+}
+
+.footer-copyright {
+    font-family: 'DosisL';
+    font-size: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: #aaa;
+}
